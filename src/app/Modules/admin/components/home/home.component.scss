@@ -1,12 +1,7 @@
 .container {
     margin-top: 20px;
     padding: 20px;
-    
-
-    
   
-      
-
   
     .profile {
         
@@ -154,7 +149,7 @@
     
       ul li {
         margin-bottom: 5px;
-        font-size: 18px;
+         font-size: 16px;
       }
     
       /* Animation */
@@ -357,8 +352,8 @@
 }
 .overlay-text .line {
   opacity: 0;
-  transform: translateX(-150px); /* Increase the value to move text further from the left */
-  animation: fadeInFromLeft 2s forwards; /* Change the animation name */
+  transform: translateX(-150px); 
+  animation: fadeInFromLeft 2s forwards; 
   margin-bottom: 20px;
 }
 
@@ -426,15 +421,12 @@
     max-width: 100%;
   }
 
-  .overlay-text .line {
-    transform: translateX(0);
-    
+  .overlay-text .line:nth-child(1) {
+    font-size: 1em;
+    margin-top: 20px;
   }
 
-  .overlay-text .line:nth-child(2) {
-    transform: translateX(0);
-    
-  }
+
 }
 
 .dark-mode .container {
@@ -451,4 +443,26 @@
    
 }
 
-  
+
+
+.dark-mode {
+  .card-section {
+    .card {
+      .name,
+      .description {
+        color: #282828; 
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .work-experience {
+    .experience-item {
+      .content
+      h3 {
+        color: #282828; 
+      }
+    }
+  }
+}

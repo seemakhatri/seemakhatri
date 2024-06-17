@@ -83,29 +83,25 @@ export class ProjectsComponent {
       name: 'XO Xplosion',
       description: 'XO Xplosion is an engaging web-based game that brings the timeless classic of Tic-Tac-Toe to your browser. Developed using web technologies such as HTML, CSS, and JavaScript, this game offers a sleek and interactive user interface.',
       image: '/assets/xo.jpg',
-      github: 'https://github.com/seemakhatri/XO-Xplosion',
-      demo: 'https://inferno-blog.web.app/'
+      github: 'https://github.com/seemakhatri/XO-Xplosion'
     },    
     {
       name: 'GymSwift RegiFit',
       description: 'Get Fit, Get Registered – Your Passport to Gym Excellence!',
       image: '/assets/gym.jpg',
-      github: 'https://github.com/seemakhatri/GYM-Registration',
-      demo: 'https://inferno-blog.web.app/'
+      github: 'https://github.com/seemakhatri/GYM-Registration'
     },
     {
       name: 'Crypto Checker',
       description: 'Angular-powered crypto checker app providing real-time data on cryptocurrencies using the Coingecko API, offering essential insights for investors and enthusiasts.',
       image: '/assets/crypto-currency-wallet.jpg',
-      github: 'https://github.com/seemakhatri/crypto-checker',
-      demo: 'https://inferno-blog.web.app/'
+      github: 'https://github.com/seemakhatri/crypto-checker'
     },
     {
       name: 'Pro Trackify',
       description: 'Developed ProTrackify, an Angular-based time-tracking and productivity tool inspired by Clockify, featuring intuitive project management and detailed analytics.',
       image: '/assets/clockify.jpeg',
-      github: 'https://github.com/seemakhatri/clockify',
-      demo: 'https://inferno-blog.web.app/'
+      github: 'https://github.com/seemakhatri/clockify'
     },
   ];
 }

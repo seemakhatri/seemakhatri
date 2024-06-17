@@ -10,29 +10,12 @@
     </div>
 </div>
 
-    <section class="skills">
-      
-      <h2>Skills</h2>
-      <ul>
-        <li>Frontend: Angular for dynamic user interfaces</li>
-        <li>Backend: 
-          ASP.NET Core for server-side logic and APIs, 
-          Node.js for server-side development
-        </li>
-        <li>Database: 
-          Proficient in Azure Data Studio, 
-          MongoDB for NoSQL database management
-        </li>
-        <li>Styling: Angular Material and Bootstrap for sleek designs</li>
-        <li>Problem Solving: Skillful in addressing complex challenges</li>
-        <li>Continuous Learning: Committed to staying updated with evolving technologies</li>
-      </ul>
-    </section>
+ 
     
 <hr>
 
 <div class="card-section" >
-  <div class="card" *ngFor="let item of menuItem()" >
+  <div class="card col-3" *ngFor="let item of menuItem()" >
     <div class="logo">
       <img src="{{item.img}}" alt="">
     </div>
@@ -40,6 +23,8 @@
     <p class="description">{{item.description}}</p>
   </div>
 </div>
+
+
 
 <section class="work-experience">
   <h2>Work Experience</h2>
@@ -74,7 +59,38 @@
       <ul>
         <li>Proficient in Git for version control, collaboration, and managing development workflows.</li>
       </ul>
+      <section class="skills">
+      
+        <h2>Skills</h2>
+        <ul>
+          <li>Frontend: Angular for dynamic user interfaces</li>
+       
+        </ul>
+        <ul>
+          <li>Backend: 
+            ASP.NET Core for server-side logic and APIs, 
+            Node.js for server-side development
+          </li>
+        </ul>
+        <ul>
+          <li>Database: 
+            Proficient in Azure Data Studio, 
+            MongoDB for NoSQL database management
+          </li>
+        </ul>
+        <ul>
+          <li>Styling: Angular Material and Bootstrap for sleek designs</li>
+        </ul>
+        <ul>
+          <li>Problem Solving: Skillful in addressing complex challenges</li>
+        </ul>
+        <ul>
+          <li>Continuous Learning: Committed to staying updated with evolving technologies</li>
+        </ul>
+      </section>
     </div>
+
+    
     <div class="timeline">
       <div class="line"></div>
       <div class="circle"></div>
