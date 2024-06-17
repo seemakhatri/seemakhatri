@@ -1,0 +1,28 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* or any background color you prefer */
+    z-index: 9999;
+  }
+  
+  .loading-screen .left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #7b7b7b;
+  }
+  
+  .loading-screen h2 {
+    background: linear-gradient(135deg, #85abdd, #b896d7);
+    background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    margin: 0;
+  }
+  

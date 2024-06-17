@@ -1,0 +1,17 @@
+<div class="container" [ngClass]="{'dark-mode': isDarkMode}">
+  <section class="projects">
+    <div class="project-cards">
+      <div *ngFor="let project of projects; let i = index" [ngClass]="{'right-card': i % 2 !== 0, 'left-card': i % 2 === 0}" class="card-row">
+        <div class="card">
+          <div class="project-image">
+            <img [src]="project.image" alt="{{ project.name }}">
+          </div>
+        </div>
+        <div class="project-details" [ngClass]="{'from-left': i % 2 !== 0, 'from-right': i % 2 === 0}">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

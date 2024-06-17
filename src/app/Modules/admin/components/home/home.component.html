@@ -1,0 +1,96 @@
+<div class="container" [ngClass]="{'dark-mode': isDarkMode}">
+
+  <div class="image-card">
+    <img src="assets/futuristic_banner_with_a_wireframe_landscape_design_1711.jpg" class="image-animation" alt="Futuristic Banner with a Wireframe Landscape Design">
+    <div class="overlay-text">
+        <div class="line">👋🏽 Hello, I am</div>
+        <div class="line">Seema Khatri</div>
+        <div class="line">A commerce graduate turned Full-Stack Developer   <br>
+          with Passion and Precision !</div>
+    </div>
+</div>
+
+    <section class="skills">
+      
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend: Angular for dynamic user interfaces</li>
+        <li>Backend: 
+          ASP.NET Core for server-side logic and APIs, 
+          Node.js for server-side development
+        </li>
+        <li>Database: 
+          Proficient in Azure Data Studio, 
+          MongoDB for NoSQL database management
+        </li>
+        <li>Styling: Angular Material and Bootstrap for sleek designs</li>
+        <li>Problem Solving: Skillful in addressing complex challenges</li>
+        <li>Continuous Learning: Committed to staying updated with evolving technologies</li>
+      </ul>
+    </section>
+    
+<hr>
+
+<div class="card-section" >
+  <div class="card" *ngFor="let item of menuItem()" >
+    <div class="logo">
+      <img src="{{item.img}}" alt="">
+    </div>
+    <div class="name">{{item.label}}</div>
+    <p class="description">{{item.description}}</p>
+  </div>
+</div>
+
+<section class="work-experience">
+  <h2>Work Experience</h2>
+  <div class="experience-item">
+    <div class="timeline">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <h3>Full Stack Developer</h3>
+      <p>MainStream Soft</p>
+      <ul>
+        <li>Adept in Angular for building dynamic and user-friendly interfaces, data binding, and responsive design.</li>
+      </ul>
+      <ul>
+        <li>Experience crafting reusable components for maintainability and efficiency.</li>
+      </ul>
+      <ul>
+        <li>Skilled in handling data flow and communication between frontend and backend.</li>
+      </ul>
+      <ul>
+        <li>Experienced in data modeling and querying languages (SQL, MongoDB) to manage and manipulate data across relational and NoSQL databases.</li>
+      </ul>
+      <ul>
+        <li>Familiarity with using Azure Data Studio for efficient database management.</li>
+      </ul>
+      <ul>
+        <li>Proficient in Git for version control, collaboration, and managing development workflows.</li>
+      </ul>
+    </div>
+    <div class="timeline">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  </div>
+
+
+  

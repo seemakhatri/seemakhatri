@@ -1,0 +1,22 @@
+<div class="container mt-3">
+  <div class="header" [ngClass]="{'dark-mode': isDarkMode}">
+    <div routerLink="/home" class="left">
+      <h2>SEEMA KHATRI</h2>
+    </div>
+
+    <div class="center" [ngClass]="{'open': isMenuOpen}">
+      <a routerLink="/home" class="nav-item" (click)="closeMenu()">Home</a>
+      <a routerLink="/about" class="nav-item" (click)="closeMenu()">About</a>
+      <a routerLink="/projects" class="nav-item" (click)="closeMenu()">Projects</a>
+      <a routerLink="/contact" class="nav-item" (click)="closeMenu()">Contact</a>
+    </div>
+
+    <div class="right">
+      <button (click)="toggleDarkMode()" class="dark-mode-toggle">
+        <span *ngIf="isDarkMode">🌙</span>
+        <span *ngIf="!isDarkMode">☀️</span>
+      </button>
+      <button (click)="toggleMenu()" class="menu-toggle">☰</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-container {
+  margin-bottom: 40px;
+}
+
+.about-image img, .art-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  padding: 30px; 
+  border-radius: 8px;
+  line-height: 1.6; 
+  font-size: 16px;
+}
+
+.about-text p {
+  margin-bottom: 15px; 
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 24px; 
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume-button:hover {
+  background-color: #0056b3; 
+}
+
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume-button:hover {
+  background-color: #0056b3; 
+}
+
+.art {
+  margin-bottom: 40px;
+}
+
+.art-text {
+  padding: 30px; 
+  border-radius: 8px;
+  line-height: 1.6; 
+  font-size: 16px;
+}
+
+
+.youtube-video {
+  margin-bottom: 40px;
+}
+
+.youtube-video h2 {
+  margin-bottom: 10px;
+}
+
+.youtube-video iframe {
+  border-radius: 8px;
+}
+
+.paintings {
+  margin-bottom: 40px;
+}
+
+.paintings-text h1 {
+  margin-bottom: 10px;
+}
+
+.paintings-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.paintings-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-info {
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+.dark-mode .container {
+  background-color: #fefef5;
+  border: 1px solid rgb(220, 220, 220);
+  color: #888888;
+}
+
+.dark-mode .card {
+  background-color: #f1f1eb;
+  border: 1px solid rgb(220, 220, 220);
+  color: #282828;
+}
+
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient( #85abdd, #b896d7);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #45a049;
+}
