@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class InquiriesService {
 
-  private apiUrl = "https://sk-backend-h2fw.onrender.com/";
+  private apiUrl = "https://sk-backend-h2fw.onrender.com";
 
   constructor(private http: HttpClient) {}
 
