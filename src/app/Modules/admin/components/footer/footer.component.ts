@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ThemeService } from 'src/app/Services/theme.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,13 +6,6 @@ import { ThemeService } from 'src/app/Services/theme.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  constructor(private themeService: ThemeService) {}
 
-  toggleDarkMode() {
-    this.themeService.toggleDarkMode();
-  }
 
-  get isDarkMode() {
-    return this.themeService.isDarkModeEnabled();
-  }
 }

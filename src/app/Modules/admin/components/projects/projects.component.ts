@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { ThemeService } from 'src/app/Services/theme.service';
 
 export type MenuItem = {
   img: string;
@@ -22,15 +21,6 @@ interface Experience {
 })
 export class ProjectsComponent {
 
-  constructor(private themeService: ThemeService) {}
-
-  toggleDarkMode() {
-    this.themeService.toggleDarkMode();
-  }
-
-  get isDarkMode() {
-    return this.themeService.isDarkModeEnabled();
-  }
 
   menuItem = signal<MenuItem[]>([
     {
@@ -73,34 +63,56 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'Dynamic Market Insights Platform',
+      description: 'Developed an innovative Angular-based system to deliver real-time updates on the UK and US stock markets. Integrated features include live market status, detailed corporate actions (dividends, stock splits), and market forecasts for informed decision-making. Currently expanding to integrate actual market data feeds and advanced analytics. Designed to empower investors and financial professionals with comprehensive tools for strategic investment planning.',
+      image: '/assets/projects/hl.jpeg',
+      github: 'https://github.com/seemakhatri/hl',
+      demo: 'https://hargreaves-lansdown.onrender.com'
+    },
+    {
+      name: 'Online Chess',
+      description: 'Introducing an exciting online chess game built with Node.js, TypeScript, and React Vite! This dynamic application leverages WebSocket for real-time multiplayer interaction, ensuring seamless gameplay. Designed with Tailwind CSS, it features a sleek and modern interface. Powered by the chess.js library, players can engage in strategic battles with ease. Challenge your friends or take on opponents worldwide—let the game begin!',
+      image: '/assets/projects/chess.JPEG',
+      github: 'https://github.com/seemakhatri/playChess',
+    },
+
+    {
+      name: 'Employee App',
+      description: 'Developed an Angular web app for managing employee data with add/edit/delete functionality, leveraging IndexedDB for local data persistence. Integrated a custom date picker, while ensuring responsive layouts for tablet and desktop. Built with Angular v16, using Signals for efficient state management, and hosted on Firebase for free deployment.',
+      image: '/assets/projects/employee.jpeg',
+      github: 'https://github.com/seemakhatri/angular-web-app',
+      demo: 'https://angular-web-app-c4358.web.app/'
+    },
+
+    {
       name: 'Inferno-blog',
       description: 'Crafted Inferno-blog, an Angular + Firebase   application, focusing on seamless CRUD    operations and elegant data storage. Utilized    operations and elegant data storage. Utilized  user-friendly features.',
-      image: '/assets/project1.jpeg',
+      image: '/assets/projects/project1.jpeg',
       github: 'https://github.com/seemakhatri?tab=repositories',
       demo: 'https://inferno-blog.web.app/'
     },
     {
       name: 'XO Xplosion',
       description: 'XO Xplosion is an engaging web-based game that brings the timeless classic of Tic-Tac-Toe to your browser. Developed using web technologies such as HTML, CSS, and JavaScript, this game offers a sleek and interactive user interface.',
-      image: '/assets/xo.jpg',
+      image: '/assets/projects/xo.jpg',
       github: 'https://github.com/seemakhatri/XO-Xplosion'
     },    
     {
       name: 'GymSwift RegiFit',
       description: 'Get Fit, Get Registered – Your Passport to Gym Excellence!',
-      image: '/assets/gym.jpg',
+      image: '/assets/projects/gym.jpg',
       github: 'https://github.com/seemakhatri/GYM-Registration'
     },
     {
       name: 'Crypto Checker',
       description: 'Angular-powered crypto checker app providing real-time data on cryptocurrencies using the Coingecko API, offering essential insights for investors and enthusiasts.',
-      image: '/assets/crypto-currency-wallet.jpg',
+      image: '/assets/projects/crypto-currency-wallet.jpg',
       github: 'https://github.com/seemakhatri/crypto-checker'
     },
     {
       name: 'Pro Trackify',
       description: 'Developed ProTrackify, an Angular-based time-tracking and productivity tool inspired by Clockify, featuring intuitive project management and detailed analytics.',
-      image: '/assets/clockify.jpeg',
+      image: '/assets/projects/clockify.jpeg',
       github: 'https://github.com/seemakhatri/clockify'
     },
   ];

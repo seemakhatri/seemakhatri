@@ -1,14 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
 body {
-    background-color: rgb(22, 29, 35); /* Default dark mode background color */
-    color:#595959;
-  }
-  
-  .dark-mode {
-    background-color: #fefef5; 
-    color:#595959;
-  }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-html {
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5CD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23cfcfcf' stroke-width='1' stroke-opacity='0.4' stroke-dasharray='2,1'%3E%3Cpath d='M0 20L20 20M20 0L20 20M0 0L20 0M0 20L0 0'/%3E%3C/g%3E%3C/svg%3E")
 }
+

@@ -1,22 +1,20 @@
-<div class="container mt-3">
-  <div class="header" [ngClass]="{'dark-mode': isDarkMode}">
-    <div routerLink="/home" class="left">
-      <h2>SEEMA KHATRI</h2>
-    </div>
-
-    <div class="center" [ngClass]="{'open': isMenuOpen}">
-      <a routerLink="/home" class="nav-item" (click)="closeMenu()">Home</a>
-      <a routerLink="/about" class="nav-item" (click)="closeMenu()">About</a>
-      <a routerLink="/projects" class="nav-item" (click)="closeMenu()">Projects</a>
-      <a routerLink="/contact" class="nav-item" (click)="closeMenu()">Contact</a>
-    </div>
-
-    <div class="right">
-      <button (click)="toggleDarkMode()" class="dark-mode-toggle">
-        <span *ngIf="isDarkMode">🌙</span>
-        <span *ngIf="!isDarkMode">☀️</span>
-      </button>
-      <button (click)="toggleMenu()" class="menu-toggle">☰</button>
-    </div>
+<div class="header">
+  <div routerLink="/about" class="left">
+    <h2>SEEMA KHATRI</h2>
   </div>
+<div class="center" [ngClass]="{'open': isMenuOpen}">
+  <a routerLink="/about" class="nav-item" (click)="closeMenu()">About</a>
+  <a routerLink="/blog" class="nav-item" (click)="closeMenu()">Blog</a>
+  <a routerLink="/projects" class="nav-item" (click)="closeMenu()">Projects</a>
+  <a routerLink="/shop" class="nav-item" (click)="closeMenu()">Shop</a>
 </div>
+
+<button (click)="toggleMenu()" class="menu-toggle ">☰</button>
+</div>
+
+
+
+<!-- <button class="flex transition-transform hover:scale-125 align-middle" (click)="themeService.toggleDarkMode()">
+  <span *ngIf="!themeService.darkmode()" class="material-icons">dark_mode</span>
+  <span *ngIf="themeService.darkmode()" class="material-icons">light_mode</span>
+</button> -->

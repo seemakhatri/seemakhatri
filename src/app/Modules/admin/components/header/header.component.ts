@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { ThemeService } from 'src/app/Services/theme.service';
+import { Component, signal } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -10,21 +9,16 @@ import { filter } from 'rxjs/operators';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  darkmode = signal<boolean>(false);
 
-  constructor(private themeService: ThemeService, private router: Router) {
+
+  constructor( private router: Router) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         this.closeMenu();
       });
-  }
 
-  toggleDarkMode() {
-    this.themeService.toggleDarkMode();
-  }
-
-  get isDarkMode() {
-    return this.themeService.isDarkModeEnabled();
   }
 
   toggleMenu() {

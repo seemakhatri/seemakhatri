@@ -1,85 +1,138 @@
-<div class="container" [ngClass]="{'dark-mode': isDarkMode}">
-  <div class="about-container">
-<div class="row">
-  <div class="col-6">
-    <div class="about-image">
-      <img src="/assets/IMG_8542.jpeg" alt="About Image">
+<div class="about-page">
+
+    <div class="about-container">
+        <div class="window-header">
+            <span class="window-title">Hello World!! ✨</span>
+            <div class="window-controls">
+                <span class="control minimize"><i class="fa fa-minus"></i></span>
+                <span class="control maximize"><i class="fa fa-window-maximize"></i></span>
+                <span class="control close"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+        <div class="about-text">
+            <h2 class="text-center">Hi 👩🏽‍💻</h2>
+            <p class="intro"><strong>My name is Seema Khatri. I'm a Full Stack Developer and an artist based in India. I am currently pursuing a postgraduate course in Computer Applications.</strong></p>
+        
+            <p>I specialize in designing responsive user interfaces with HTML, CSS, and JavaScript, and developing robust backend systems using Node.js, Express, and MongoDB. I thrive on crafting seamless, end-to-end digital experiences.</p>
+        
+            <p><strong>With 1.5 years of hands-on experience,</strong> I focus on building responsive web applications that are not only visually engaging but also deliver flawless functionality and user satisfaction.</p>
+        
+            <p>My goal is to discover self-improvement opportunities while delivering solutions that are both aesthetically appealing and technically sound. I am versatile and eager to explore new possibilities that will enhance my creativity in coding. Each project is an opportunity for me to learn something new and apply everything I have learned over the past two years.</p>
+        
+            <div style="text-align: center;">
+                <a href="https://drive.google.com/file/d/1NzesFwQNveM8omRv4u0CY2Gnxn4XnLan/view?usp=drive_link" target="_blank" class="resume-button">My Resume</a>
+                <button routerLink="/projects" class="resume-button">Projects</button>
+            </div>
+        </div>
+        
     </div>
-  </div>
+    
+  
 
-<div class="col-6">
-<div class="about-text">
-  <h1>Hello World!! ✨</h1>
-  <p class="intro"><strong>👩🏽‍💻 I'm a Full Stack Developer with a background in finance & accounting, building beautiful and functional applications from scratch.</strong></p>
-  <p>I'm currently expanding my skillset in <b>software development through a PGDCA course.</b></p>
-  <p> My foray began with the fundamentals – the building blocks of websites, but I soon wanted more.</p>
-  <p>💡 I dived into both front-end and back-end, mastering Angular for the front-end and wielding the power of C# and ASP.NET on the back-end.</p>
-  <p><b>With 1.5 years of experience,</b> I'm passionate about creating responsive web applications that work flawlessly and offer great user experiences.</p>
-  <p>Each project lets me combine creativity with technical skills to produce solutions that are both visually appealing and highly functional.</p>
 
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://drive.google.com/file/d/1NzesFwQNveM8omRv4u0CY2Gnxn4XnLan/view?usp=drive_link" target="_blank" class="resume-button">My Resume</a>
-  </div>
-</div>
-</div>
-</div>
-  </div>
+    <section class="flex flex-col items-center justify-center">
+      <h2>Skills </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Angular</div>
+        <div class="skill-box">Bootstrap</div>
+        <div class="skill-box">Tailwind CSS</div>
+        <div class="skill-box">Node.js</div>
+        <div class="skill-box">Express</div>
+        <div class="skill-box">MongoDB</div>
+        <div class="skill-box">.NET</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">RESTful APIs</div>
+      </div>
+    </section>
 
-  <div class="art">
-<div class="row">
-  <div class="col-6">
-    <div class="art-text">
-      <h1>To balance out my technical work, I enjoy...</h1>
-      <p>Thematically, when I'm not building or coding, I find myself drawn to the physical world through painting.</p>
-      <p>I've been honing my skills as a painter for the past five years, and I'm particularly drawn to the beauty of nature and the intricate details found in religious iconography.</p>
-      <p>I've had the pleasure of selling several pieces, and I find the process of creating and sharing my art incredibly rewarding.</p>
-      <p>This artistic side definitely influences the way I approach user interfaces and design, as I strive to create visually appealing and well-crafted applications.</p>
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-date">
+              <h4>MainStream Soft</h4>
+              <p>Full Stack Developer</p>
+              <p>January 2023 - June 2024</p>
+            </div>
+            <div class="timeline-content">
+              <ul>
+                <li>Designed databases from scratch, optimizing data management with efficient stored procedures.</li>
+                <li>Developed comprehensive APIs in .NET, facilitating seamless communication between app components.</li>
+                <li>Implemented state management in Angular with NgRx for optimal application performance.</li>
+                <li>Engaged in full development cycles, including front-end UI development and backend processes using .NET.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add more timeline events as needed -->
+        </div>
+      </section>
+      
+      
+
+    <div class="art">
+        <div class="row">
+            <h1>Also, what i do other than just code..</h1>
+            <p>I enjoy painting. I use social media platforms to share my artworks and create paintings that reflects love for countryside <br> and a break from mundane and regular. Art has helped me find balance in my life <br> and I believe that it would help you too for same.</p>
+        </div>
     </div>
-  </div>
-<div class="col-6">
-  <div class="art-image">
-    <img src="/assets/hands.jpeg" alt="Art Image">
-  </div>
+  
+<div class="container">
+    <div class="youtube-video">
+        <h2>Check out my YouTube Channel:</h2>
+        <div class="row">
+            <div class="col-6">
+                <iframe src="https://www.youtube.com/embed/9xItW7zbPw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-6">
+                <iframe src="https://www.youtube.com/embed/GZ8j62PS5y4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
 </div>
-</div>
-  </div>
-
-  <div class="youtube-video">
-    <h2>Check out my YouTube Channel:</h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/mAWb_zl_VUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
 
   <div class="paintings">
-    <div class="paintings-text">
-      <h1>My Paintings</h1>
-      <p>You can view some of my paintings below:</p>
-    </div>
-    <div class="paintings-images">
-      <div>
-        <img src="/assets/sunset.jpeg" alt="Sunset">
-        <p class="image-info">Find what you love and paint it.🌅</p>
+      <div class="paintings-text">
+          <h2>My Paintings</h2>
       </div>
-      <div>
-        <img src="/assets/shadow.jpeg" alt="Sunset 1">
-        <p class="image-info">Dramatic light.✨</p>
+      <div class="paintings-images">
+          <div>
+              <img src="/assets/paintings/sunset.jpeg" alt="Sunset">
+              <p class="image-info">Find what you love and paint it.🌅</p>
+          </div>
+          <div>
+              <img src="/assets/paintings/shadow.jpeg" alt="Shadow">
+              <p class="image-info">Dramatic light.✨</p>
+          </div>
+          <div>
+              <img src="/assets/paintings/sunset2.jpeg" alt="Sunset 2">
+              <p class="image-info">Nostalgia ✨</p>
+          </div>
+          <div>
+              <img src="/assets/paintings/sunset3.jpeg" alt="Sunset 3">
+              <p class="image-info">Sunset Moodboard🧡 </p>
+          </div>
+          <div>
+              <img src="/assets/paintings/eiffel.jpeg" alt="Eiffel Tower">
+              <p class="image-info">One of my favourites so far.✌️🥲</p>
+          </div>
       </div>
-      <div>
-        <img src="/assets/sunset2.jpeg" alt="Sunset 2">
-        <p class="image-info">Nostalgia ✨</p>
-      </div>
-      <div>
-        <img src="/assets/sunset3.jpeg" alt="Sunset 3">
-        <p class="image-info">Sunset Moodboard🧡 </p>
-      </div>
-      <div>
-        <img src="/assets/eiffel.jpeg" alt="Eiffel Tower">
-        <p class="image-info">One of my favourites so far.✌️🥲</p>
-      </div>
-    
-    </div>
   </div>
   
+  <div class="purchase-paintings">
+      <p>If you're captivated by any of my paintings, you can purchase them directly from me! Each piece is crafted with care and attention to detail, and I love sharing them with those who appreciate art as much as I do.</p>
+      <p>Feel free to <a href="mailto:khatrisonia566@gmail.com">contact me</a> for inquiries on availability, pricing, and custom requests.</p>
+  </div>
   
-</div>
+
+    
+  </div>
+
+
+
+
+
 
 

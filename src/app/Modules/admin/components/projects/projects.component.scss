@@ -1,5 +1,5 @@
 .container {
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
 
   .btn-primary {
@@ -18,10 +18,15 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    padding: 20px;
-    border: 1px solid rgb(62, 62, 62);
-    border-radius: 5px;
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    border:3px solid #000000;
+    border-top-width: 1px; 
+    border-left-width: 1px;
+    border-bottom-width: 3px solid #000000;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
@@ -39,12 +44,21 @@
     }
   }
 
+
+
   .project-image {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
+  .project-name{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #127681; 
+  }
   h3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -65,21 +79,4 @@
       }
     }
   }
-}
-
-
-.dark-mode .container {
-  background-color: #fefef5;
-  border: 1px solid rgb(220, 220, 220);
-  color: #888888;
-}
-
-.dark-mode .card {
-  background-color: #f1f1eb;
-  border: 1px solid rgb(220, 220, 220);
-  color: #282828;
-}
-
-.dark-mode .row{
-  border: 1px solid rgb(203, 203, 203);
 }

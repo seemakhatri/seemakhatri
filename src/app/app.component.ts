@@ -1,5 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { ThemeService } from './Services/theme.service';
 import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError, Event } from '@angular/router';
 
 @Component({
@@ -12,7 +11,7 @@ export class AppComponent implements AfterViewInit {
   loading = true;
   title = 'my-portfolio';
 
-  constructor(private themeService: ThemeService, private router: Router) {
+  constructor( private router: Router) {
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationStart) {
         this.loading = true;
@@ -29,7 +28,4 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
-  get isDarkMode() {
-    return this.themeService.isDarkModeEnabled();
-  }
 }

@@ -9,8 +9,7 @@
   padding: 15px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   z-index: 1000;
-  color: #888888;
-  border-top: 1px solid rgb(125, 125, 125);
+  color: #2a2a2a;
   cursor: pointer;
   flex-wrap: wrap;
 }
@@ -26,9 +25,7 @@
 }
 
 h2 {
-  background: linear-gradient(135deg, #85abdd, #b896d7);
-  background-clip: text;
-  color: transparent;
+  color: #CB6040;
   font-size: 24px;
   margin: 0;
   cursor: pointer;
@@ -47,9 +44,7 @@ h2 {
 }
 
 .right h2 {
-  background: linear-gradient(135deg, #85abdd, #b896d7);
-  background-clip: text;
-  color: transparent;
+  color: #CB6040;
   font-size: 24px;
   cursor: pointer;
 }
