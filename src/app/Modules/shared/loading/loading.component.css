@@ -11,7 +11,7 @@
   overflow: hidden; 
 }
 
-.loading-screen .background-video {
+.loading-screen .background-gif {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,21 +19,4 @@
   height: 100%;
   object-fit: cover; 
   z-index: -1;
-}
-
-
-.background-video::-webkit-media-controls {
-  display: none !important;
-}
-
-.background-video::-moz-media-controls {
-  display: none !important;
-}
-
-.background-video::-ms-media-controls {
-  display: none !important;
-}
-
-.background-video::-o-media-controls {
-  display: none !important;
 }
