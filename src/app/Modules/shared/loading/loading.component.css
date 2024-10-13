@@ -21,3 +21,19 @@
   z-index: -1;
 }
 
+
+.background-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.background-video::-moz-media-controls {
+  display: none !important;
+}
+
+.background-video::-ms-media-controls {
+  display: none !important;
+}
+
+.background-video::-o-media-controls {
+  display: none !important;
+}
