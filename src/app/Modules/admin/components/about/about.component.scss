@@ -157,75 +157,132 @@
   animation-name: slideFromBottom;
 }
 
-
 .experience {
+  padding: 3em 1em;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+
   .timeline {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    padding: 2em 0;
-    margin: 0;
-    list-style-type: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 4px;
+      background: #e0e0e0;
+    }
 
     .timeline-event {
+      background: #F2E5BF;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 1.5em;
+      margin: 2em 0;
+      width: 90%;
+      max-width: 700px;
       position: relative;
-      padding: 1em 2em;
-      margin: 1em;
-      width: 300px; 
-      border-left: 2px solid #CB6040; 
-      text-align: left; 
-
-      &:nth-child(even) {
-        border-color: #4CAF50;
+      border-left: 6px solid #CB6040;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-5px);
       }
 
-      &:before {
+      &::before {
         content: "";
         position: absolute;
-        left: -7px;
-        top: 0;
-        height: 10px;
-        width: 10px;
+        top: 20px;
+        left: -12px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        background-color: #CB6040; 
+        background: #CB6040;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 3px #CB6040;
+      }
+
+      &:nth-child(even) {
+        border-left-color: #127681;
+
+        &::before {
+          background: #127681;
+          box-shadow: 0 0 0 3px #127681;
+        }
       }
 
       .timeline-date {
         h4 {
-          font-size: 1.5em;
-          font-weight: bold;
-          color: #444;
+          font-size: 1.4em;
+          margin-bottom: 0.2em;
+          color: #222;
         }
 
         p {
           margin: 0;
           font-size: 1em;
-          color: #777;
+          color: #666;
+        }
+
+        p:nth-of-type(2) {
+          font-style: italic;
+          font-size: 0.9em;
+          color: #999;
         }
       }
 
       .timeline-content {
+        margin-top: 1em;
+
         ul {
-          margin: 0;
-          padding: 0;
           list-style: none;
+          padding: 0;
+          margin: 0;
 
           li {
-            margin: 0.5em 0;
-            font-size: 1em;
-            color: #555;
             position: relative;
-            padding-left: 20px;
+            padding-left: 24px;
+            margin-bottom: 0.75em;
+            color: #444;
+            font-size: 1em;
 
-            &:before {
-              content: '✔'; 
+            &::before {
+              content: "✔";
               position: absolute;
               left: 0;
-              color: #CB6040; 
+              top: 0;
+              color: #CB6040;
+              font-weight: bold;
             }
           }
         }
+      }
+    }
+  }
+
+  // Responsive for smaller screens
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 10px;
+    }
+
+    .timeline-event {
+      margin-left: 2em;
+      border-left-width: 4px;
+
+      &::before {
+        left: -18px;
       }
     }
   }
